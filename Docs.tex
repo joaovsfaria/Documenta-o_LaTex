@@ -1,0 +1,176 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage[top=2cm, bottom=2cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amsfonts, amssymb}
+\DeclareMathOperator{\sen}{sen}
+\newcommand{\limite}{\displaystyle\lim}
+
+\begin{document}
+
+% Página de Título
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+        
+        % Título
+        \textbf{\LARGE Documentação \LaTeX}
+        
+        \vspace{0.5cm}
+        
+        % Descrição
+        Esta é uma documentação básica que demonstra como lidar com algumas operações básicas em \LaTeX. Este documento será atualizado conforme a complexidade do conteúdo aumentar.
+        
+        \vfill
+        
+        % Linha Horizontal
+        \hrulefill
+        
+        \vfill
+        
+        % Sumário
+        \textbf{\large Sumário}
+        
+        % Lista Enumerada
+        \begin{enumerate}
+            \item \underline{Operações Aritméticas}
+            \item \underline{Equação Polinomial do 2° Grau}
+            \item \underline{Conjuntos Numéricos}
+            \item \underline{Funções}
+            \item \underline{Cálculo}
+        \end{enumerate}
+        
+        \vfill
+        
+        % Linha Horizontal
+        \hrulefill
+        
+    \end{center}
+\end{titlepage}
+
+% Nova Página
+\newpage
+
+% Capítulo 1
+\section*{Capítulo 1: Operações Aritméticas}
+
+\begin{enumerate}
+    \item \textbf{Operações Aritméticas Básicas}
+    \begin{enumerate}
+        \item $a + b$
+        \item $a - b$
+        \item $a \cdot b$
+        \item $a \times b$
+        \item $a \div b$
+        \item Isso é uma fração $\dfrac{a}{b}$
+        \item Raízes $\sqrt[3]{2}$
+        \item Expoentes $a^b$
+        \item Expoentes $a^{b \div c}$
+        \item Índices $a_1$
+    \end{enumerate}
+    
+\end{enumerate}
+
+% Capítulo 2
+\section*{Capítulo 2: Equação Polinomial do 2° Grau}
+
+% Texto Explicativo
+\begin{flushleft}
+    Uma equação da forma $ax^2 + bx + c = 0$, onde $a \neq 0$, será chamada de equação polinomial do 2° grau.
+    A solução dessa equação é dada por:
+\end{flushleft}
+
+% Fórmula Matemática
+
+\[x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}.\]
+
+\section*{Capítulo 3: Conjuntos Numéricos}
+
+\begin{enumerate}
+    \item Sejam os conjuntos $A = \{1;\ 2;\ 3;\ 4\}$,
+    $B = \{x \in \mathbb{Z}\, |\, -2 \leq x < 4\}$ e 
+    $C = \{x \in \mathbb{N} \, |\, x \geq 2\}$. Responda aos itens abaixo.
+
+    \begin{enumerate}
+        \item $A \cap B$
+        \item $B \cup C$
+        \item $A - C$
+        \item $C\setminus B$
+    \end{enumerate}
+
+    \item Classifique em verdadeiro ou falso.
+    \begin{enumerate}
+        \item $\mathbb{Z} \subset \mathbb{N}$
+        \item $\mathbb{R} \subset \mathbb{Q}$
+        \item $\mathbb{Z} \not\subset \mathbb{N}$
+        \item $\mathbb{Z} \not\supset \mathbb{N}$
+        \item $0 \not\in \mathbb{R}\setminus\mathbb{Q}$
+        \item $\forall x \mathbb{N}$, temos $x\geq 0$
+        \item $\exists x \in \mathbb{R}$, tal que $\sqrt{x}\not\in\mathbb{R}$.
+        \item $7 \not\in \{x\in \mathbb{N} \, |\, \textrm{é par}\}$
+    \end{enumerate}
+\end{enumerate}
+
+\section*{Capítulo 4: Funções}
+
+\begin{enumerate}
+    \item \textbf{Função Quadrática:}
+    
+    Seja a função \(f:\mathbb{R} \to \mathbb{R}\) definida por 
+    \[f(x) = \frac{1}{2} x^2 - 2x + 1.\]
+    
+    \begin{enumerate}
+        \item Esboce o gráfico da função.
+    \end{enumerate}
+    
+    \item \textbf{Função por Cláusulas:}
+    
+    Seja a função \(f(x)\) definida por
+    \[
+    f(x) = 
+    \begin{cases}
+        x^2 - 1; & \textrm{se } x \geq 1 \\
+        x - 3; & \textrm{se } -1 \leq x < 1 \\
+        2x + 1; & \textrm{se } x < -1
+    \end{cases}
+    \]
+    
+    \item \textbf{Funções Exponenciais:}
+    
+    \(f(x) = 2^{x - 1}\)
+    
+    \item \textbf{Funções Logarítmicas:}
+    
+    \(f(x) = \log_2 x\)
+    
+    \item \textbf{Funções Trigonométricas:}
+    
+    \(f(x) = \cos x\)
+    
+    \(f(x) = \sin y\)
+    
+    \(f(x) = \sin \left(x - \frac{\pi}{2}\right)\)
+    
+    \(f(x) = \sin \left[x - \frac{\pi}{2}\right]\)
+    
+    \(f(x) = \sin \left\{x - \frac{\pi}{2}\right\}\)
+    
+\end{enumerate}
+
+
+\section*{Capítulo 5: Cálculo}
+
+\begin{enumerate}
+    \item Limites
+    \begin{enumerate}
+        \item Calcule os limites abaixo:
+        \begin{enumerate}
+            \item $\limite_{x \to 1} \frac{x^2 - 1}{x-1}$
+        \end{enumerate}
+    \end{enumerate}
+\end{enumerate}
+
+
+
+
+% Fim do Documento
+\end{document}
